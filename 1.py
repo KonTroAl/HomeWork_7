@@ -20,6 +20,6 @@ class Matrix:
 
 matrix_1 = Matrix([[1, 2], [3, 4]])
 matrix_2 = Matrix([[7, 8], [9, 10]])
-matrix_3 = Matrix([[5, 6], [11, 12]])
 
-print(matrix_1 + matrix_2 + matrix_3)
+
+print(matrix_1 + matrix_2)

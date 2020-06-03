@@ -26,12 +26,19 @@ class Cell:
         return f"{self.my_p}"
 
     def make_order(self, x):
+        a = self.my_p // x
         b = self.my_p % x
         z = "0"
+        g = 0
         if b != 0:
-            return f"{z * x}\n{z * b}"
+            while g < a:
+                g += 1
+                print(f"{z * x}")
+            print(f"{z * b}")
         else:
-            return f"{z * self.my_p}"
+            while g < a:
+                g += 1
+                print(f"{z * x}")
 
 
 cell_1 = Cell(20)
@@ -40,4 +47,4 @@ print(cell_1 + cell_2)
 print(cell_1 - cell_2)
 print(cell_1 * cell_2)
 print(cell_1 / cell_2)
-print(cell_1.make_order(4))
+cell_1.make_order(5)
